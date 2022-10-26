@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<style>
+    body{
+        background-color:rgb(244, 235, 235);
+    }
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+    .mode{
+        position: absolute;
+        left: 700px ;
+        border: 0px;font-size: 10px;
+
+    }
+
+    .top{
+        background-color: rgb(168, 52, 52);
+    }
+    .jrdnlogo{
+        position: absolute;
+        left: 16px;
+        top: 6px;
+        width: 50px;
+        height: 55px;
+        
+    }
+   
+    
+    .right{
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        display: inline-block;
+    }
+    .btn{
+        border: 0px ;
+    }
+    .btn:hover{
+        color: brown;
+        cursor: pointer;
+    }
+
+    .nikelogo{
+        position: absolute;
+        left: 16px;
+        top: 70px;
+        width: 50px;
+        height: 55px;
+    }
+
+    .mid{
+        background-color: white;
+        position: absolute;
+        top:80px ;
+        left:600px ;
+    } 
+
+    .butn{
+        border: 0px;
+        font-size: medium;
+        
+    }
+
+    .butn:hover{
+        color: brown;
+        cursor: pointer;
+    }
+
+    .wishlist{
+        position: absolute;
+        right: 150px;
+        top: 77px;
+        border-radius: 5px;
+        font-size: large;
+
+    }
+
+    .wishlist:hover{
+        background-color: rgb(221, 214, 214);
+        color: brown;
+        cursor: pointer;
+    }
+
+    .cart{
+        position: absolute;
+        right: 85px;
+        top: 76px;
+        font-size: large;
+        border-radius: 5px;
+    }
+    .cart:hover{
+        background-color: rgb(221, 214, 214);
+        color: brown;
+        cursor: pointer;
+    }
+
+    .trigram{
+        position: absolute;
+        right: 30px;
+        top: 76px;
+        
+    }
+    .tri{
+        border-radius: 5px;
+        font-size: large; 
+    }
+    .tri:hover{
+        background-color: rgb(221, 214, 214);
+        color: brown;
+        cursor: pointer;
+    }
+
+    .column1{
+        box-sizing: border-box;
+        float: left;
+        width: 50%;
+        margin-top: 170px;
+    }
+
+    .column1 img{
+        padding: 30px;
+        margin-left: 150px;
+       
+        /*margin-right: 80px;*/
+        
+    }
+    .column2{
+        box-sizing: border-box;
+        float: right;
+        width: 50%;
+        margin-top: 170px;
+        
+        
+    }
+    .column2 img{
+        margin: 10px;
+        /* margin-top: 170px; */
+        margin-right: 50px;
+        border-radius: 10px;
+        
+    }
+    .row:after{
+        content: "";
+        display: table;
+        clear: both;
+       
+    }
+   
+    
+</style>
+<body>
+    <button class="mode" onclick="myFunction()">Toggle dark mode</button>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+    <header>
+        <!--Logo-->
+        <div class="top">
+            <a href="#">
+                <img class="jrdnlogo" src="img/jrdnlogo.jpg"></img>
+            </a>
+        
+        </div>
+
+        
+        
+        <!--Right for buttons-->
+        <div class="right">
+            <a href="#">
+            <button class="btn">Help</button>
+            </a>
+            <a href="#">
+            <button class="btn">Join Us</button>
+            </a>
+            <a href="#">
+            <button class="btn">Sign In</button>
+            </a>
+
+        </div>
+
+    </header>
+    <div class="nike">
+        <a href="#">
+            <img class="nikelogo" src="img/nkelogo.jpg"></img>
+        </a>
+    </div>
+
+     <!--Mid for categories-->
+    
+    <div class="mid">
+            
+        <a href="#">
+         <button class="butn">Men</button>
+        </a> 
+
+        <a href="#">
+         <button class="butn">Women</button>
+        </a>
+
+        <a href="#">
+         <button class="butn">Kids</button>
+        </a>
+
+        <a href="#">
+         <button class="butn">Sale</button>
+        </a>
+
+        <a href="#">
+         <button class="butn">SNKRS</button>
+        </a>
+     </div>
+     
+
+    <div class="wish">
+        <button class="wishlist">&#9825;</button>
+    </div>
+    <div bag>
+        <button class="cart">&#128722;</button>
+    </div>
+     <div class="trigram">
+        <button class="tri">&#x2630;</button>
+     </div>
+
+
+     <div class="row">
+        <div class="column1">
+            <img class="nike17" src="img/nike1.jpg" style="width: 50%;">
+            <img class="nike17" src="img/nike7.jpg" style="width: 50%;">
+        </div>
+        <div class="column2">
+            <img class="nike6" src="img/nike6.jpg" style="width: 50%;">
+            <img class="nike45" src="img/nike4.jpg" style="width: 50%;">
+           
+        </div>
+     </div>
+     
+ 
+</body>
+</html>
